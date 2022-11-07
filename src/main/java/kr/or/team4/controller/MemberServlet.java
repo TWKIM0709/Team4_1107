@@ -147,10 +147,6 @@ public class MemberServlet extends HttpServlet {
                viewpage = "/alllist.do";
             } else if(urlcommand.equals("/detail.do")){
 
-               MemberDao dao = new MemberDao();
-               request.setAttribute("member", dao.getMemberDtoListById(request.getParameter("id")));
-               
-               viewpage = "/WEB-INF/views/detail.jsp";
             } else if (urlcommand.equals("/test.do")){
             	// like조회
                 MemberDao dao = new MemberDao();
